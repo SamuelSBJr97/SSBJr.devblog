@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-25-10-intro-build.html</loc>
+    <lastmod>Thu Apr 25 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-24-14-arquitetura-escalavel.html</loc>
+    <lastmod>Wed Apr 24 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-ecommerce-nodejs.html</loc>
+    <lastmod>Tue Apr 23 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-curso-react.html</loc>
+    <lastmod>Mon Apr 15 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-devtalk-01.html</loc>
+    <lastmod>Sat Apr 20 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ssbjr.github.io/SSBJr.devblog/posts/2024-04-express-1h.html</loc>
+    <lastmod>Thu Apr 18 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
