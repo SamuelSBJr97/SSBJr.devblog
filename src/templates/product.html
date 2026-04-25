@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} - Produto</title>
+  <meta name="description" content="{{title}}">
+  <meta name="author" content="Samuel SBJr">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:image" content="{{image}}">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">SSBJr Dev</a>
+        <ul class="nav-links">
+          <li><a href="/">Blog</a></li>
+          <li><a href="/#products">Loja</a></li>
+          <li><a href="/about.html">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="content-page">
+      <header class="content-header">
+        <img src="{{image}}" alt="{{title}}" class="content-featured-image">
+        <h1>{{title}}</h1>
+      </header>
+
+      <div class="content">
+        {{content}}
+      </div>
+
+      <footer class="content-footer">
+        <a href="/#products" class="back-link">← Voltar para loja</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Samuel SBJr. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

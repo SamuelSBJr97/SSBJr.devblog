@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSBJr Dev Blog - Análise e Desenvolvimento de Sistemas</title>
+  <meta name="description" content="Blog focado em análise e desenvolvimento de sistemas, com posts, projetos, produtos, podcasts e vídeos técnicos.">
+  <meta name="author" content="Samuel SBJr">
+  <meta property="og:title" content="SSBJr Dev Blog">
+  <meta property="og:description" content="Análise e desenvolvimento de sistemas com Samuel SBJr">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/landing.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">SSBJr Dev</a>
+        <ul class="nav-links">
+          <li><a href="/">Blog</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#products">Loja</a></li>
+          <li><a href="#podcasts">Podcast</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="/about.html">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Análise e Desenvolvimento de Sistemas</h1>
+          <p class="hero-subtitle">Explorando o mundo da tecnologia, arquitetura de software e desenvolvimento de soluções escaláveis</p>
+          <div class="hero-cta">
+            <a href="#posts" class="btn btn-primary">Leia os Posts</a>
+            <a href="/about.html" class="btn btn-secondary">Conheça-me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-emoji">💻</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrossel de Posts em Destaque -->
+    <section class="carousel-section">
+      <div class="container">
+        <h2>Últimas Notícias</h2>
+        <div class="carousel">
+          <div class="carousel-container">
+            {{carousel}}
+          </div>
+          <button class="carousel-nav carousel-prev" onclick="moveCarousel(-1)">‹</button>
+          <button class="carousel-nav carousel-next" onclick="moveCarousel(1)">›</button>
+        </div>
+        <div class="carousel-dots">
+          <!-- Gerado por JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts Recentes -->
+    <section id="posts" class="section">
+      <div class="container">
+        <h2>Últimas Postagens</h2>
+        <div class="grid grid-3">
+          {{posts}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="section bg-alt">
+      <div class="container">
+        <h2>Projetos em Destaque</h2>
+        <p class="section-subtitle">Conheça alguns dos projetos que desenvolvi</p>
+        <div class="grid grid-3">
+          {{projects}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos/Loja -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Loja de Produtos</h2>
+        <p class="section-subtitle">Cursos, templates e ferramentas para desenvolvedores</p>
+        <div class="grid grid-4">
+          {{products}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Patrocinadores -->
+    <section class="sponsors-section bg-alt">
+      <div class="container">
+        <h2>Patrocinadores e Parceiros</h2>
+        <div class="sponsors-grid">
+          <div class="sponsor-card">
+            <div class="sponsor-logo">🤝</div>
+            <h3>Seja um Patrocinador</h3>
+            <p>Apoie o desenvolvimento de conteúdo técnico de qualidade</p>
+            <a href="mailto:seu@email.com" class="btn btn-outline">Entre em Contato</a>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-logo">⭐</div>
+            <h3>Seu Logo Aqui</h3>
+            <p>Torne-se um patrocinador oficial do blog</p>
+            <a href="mailto:seu@email.com" class="btn btn-outline">Saiba Mais</a>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-logo">💼</div>
+            <h3>Parcerias</h3>
+            <p>Proporcione oportunidades de colaboração</p>
+            <a href="mailto:seu@email.com" class="btn btn-outline">Fale Conosco</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podcasts -->
+    <section id="podcasts" class="section">
+      <div class="container">
+        <h2>Podcasts</h2>
+        <p class="section-subtitle">Conversas sobre tecnologia e desenvolvimento</p>
+        <div class="grid grid-3">
+          {{podcasts}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeos -->
+    <section id="videos" class="section bg-alt">
+      <div class="container">
+        <h2>Vídeos</h2>
+        <p class="section-subtitle">Tutoriais, análises e lives técnicas</p>
+        <div class="grid grid-3">
+          {{videos}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Perfis em Plataformas de Dev -->
+    <section class="profiles-section">
+      <div class="container">
+        <h2>Encontre-me em Plataformas de Dev</h2>
+        <div class="profiles-grid">
+          <a href="https://github.com/ssbjr97" class="profile-card" target="_blank">
+            <div class="profile-icon">🐙</div>
+            <h3>GitHub</h3>
+            <p>Meus repositórios e contribuições</p>
+          </a>
+          <a href="https://stackoverflow.com" class="profile-card" target="_blank">
+            <div class="profile-icon">📚</div>
+            <h3>Stack Overflow</h3>
+            <p>Respostas e perguntas técnicas</p>
+          </a>
+          <a href="https://linkedin.com/in/seu-profile" class="profile-card" target="_blank">
+            <div class="profile-icon">💼</div>
+            <h3>LinkedIn</h3>
+            <p>Experiência e conectar-se profissionalmente</p>
+          </a>
+          <a href="https://dev.to" class="profile-card" target="_blank">
+            <div class="profile-icon">✍️</div>
+            <h3>Dev.to</h3>
+            <p>Artigos e discussões da comunidade</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre</h4>
+          <p>Blog focado em análise e desenvolvimento de sistemas, com conteúdo técnico de qualidade.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="/">Blog</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#products">Loja</a></li>
+            <li><a href="/about.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Desenvolva Conosco</h4>
+          <p>Interessado em colaborar em projetos?</p>
+          <a href="https://linkedin.com/in/seu-profile" class="btn btn-outline" target="_blank">Conecte no LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Samuel SBJr. Todos os direitos reservados. | <a href="/privacy.html">Privacidade</a> | <a href="/terms.html">Termos</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts/carousel.js"></script>
+</body>
+</html>
