@@ -115,7 +115,7 @@ function renderPost(post) {
   const formattedDate = dayjs(post.date).format('DD/MM/YYYY');
   
   const tagsHtml = post.tags
-    .map(tag => `<a href="/tags/${tag.toLowerCase()}.html" class="tag">#${tag}</a>`)
+    .map(tag => `<a href="/SSBJr.devblog/tags/${tag.toLowerCase()}.html" class="tag">#${tag}</a>`)
     .join(' ');
 
   return template
@@ -187,7 +187,7 @@ function renderLanding(data) {
   const carouselHtml = carouselPosts
     .map((post, idx) => {
       const formattedDate = dayjs(post.date).format('DD/MM/YYYY');
-      const image = post.image && post.image.startsWith('http') ? post.image : `${post.image || '/imagens/post-placeholder.jpg'}`;
+      const image = post.image && post.image.startsWith('http') ? post.image : `${post.image || '/SSBJr.devblog/imagens/post-placeholder.jpg'}`;
       const activeClass = idx === 0 ? 'active' : '';
       return `
         <div class="carousel-slide ${activeClass}" data-index="${idx}">
@@ -196,7 +196,7 @@ function renderLanding(data) {
             <h3>${post.title}</h3>
             <p>${post.description}</p>
             <time>${formattedDate}</time>
-            <a href="/posts/${post.slug}.html" class="btn btn-primary">Ler mais</a>
+            <a href="/SSBJr.devblog/posts/${post.slug}.html" class="btn btn-primary">Ler mais</a>
           </div>
         </div>
       `;
@@ -207,15 +207,15 @@ function renderLanding(data) {
   const postsHtml = data.recentPosts.slice(0, 6)
     .map(post => {
       const formattedDate = dayjs(post.date).format('DD/MM/YYYY');
-      const image = post.image && post.image.startsWith('http') ? post.image : `${post.image || '/imagens/post-placeholder.jpg'}`;
+      const image = post.image && post.image.startsWith('http') ? post.image : `${post.image || '/SSBJr.devblog/imagens/post-placeholder.jpg'}`;
       return `
         <article class="card">
           <img src="${image}" alt="${post.title}" class="card-image">
           <div class="card-content">
-            <h3><a href="/posts/${post.slug}.html">${post.title}</a></h3>
+            <h3><a href="/SSBJr.devblog/posts/${post.slug}.html">${post.title}</a></h3>
             <time>${formattedDate}</time>
             <p>${post.description}</p>
-            <a href="/posts/${post.slug}.html" class="link-more">Leia mais →</a>
+            <a href="/SSBJr.devblog/posts/${post.slug}.html" class="link-more">Leia mais →</a>
           </div>
         </article>
       `;
@@ -225,14 +225,14 @@ function renderLanding(data) {
   // Projetos
   const projectsHtml = data.projects
     .map(project => {
-      const image = project.image && project.image.startsWith('http') ? project.image : `${project.image || '/imagens/project-placeholder.jpg'}`;
+      const image = project.image && project.image.startsWith('http') ? project.image : `${project.image || '/SSBJr.devblog/imagens/project-placeholder.jpg'}`;
       return `
         <article class="card">
           <img src="${image}" alt="${project.title}" class="card-image">
           <div class="card-content">
-            <h3><a href="/projects/${project.slug}.html">${project.title}</a></h3>
+            <h3><a href="/SSBJr.devblog/projects/${project.slug}.html">${project.title}</a></h3>
             <p>${project.description}</p>
-            <a href="/projects/${project.slug}.html" class="link-more">Ver projeto →</a>
+            <a href="/SSBJr.devblog/projects/${project.slug}.html" class="link-more">Ver projeto →</a>
           </div>
         </article>
       `;
@@ -242,14 +242,14 @@ function renderLanding(data) {
   // Produtos
   const productsHtml = data.products
     .map(product => {
-      const image = product.image && product.image.startsWith('http') ? product.image : `${product.image || '/imagens/product-placeholder.jpg'}`;
+      const image = product.image && product.image.startsWith('http') ? product.image : `${product.image || '/SSBJr.devblog/imagens/product-placeholder.jpg'}`;
       return `
         <article class="card product-card">
           <img src="${image}" alt="${product.title}" class="card-image">
           <div class="card-content">
             <h3>${product.title}</h3>
             <p>${product.description}</p>
-            <a href="/products/${product.slug}.html" class="btn btn-secondary">Saiba mais</a>
+            <a href="/SSBJr.devblog/products/${product.slug}.html" class="btn btn-secondary">Saiba mais</a>
           </div>
         </article>
       `;
@@ -264,10 +264,10 @@ function renderLanding(data) {
         <article class="card podcast-card">
           <div class="podcast-icon">🎙️</div>
           <div class="card-content">
-            <h3><a href="/podcasts/${podcast.slug}.html">${podcast.title}</a></h3>
+            <h3><a href="/SSBJr.devblog/podcasts/${podcast.slug}.html">${podcast.title}</a></h3>
             <time>${formattedDate}</time>
             <p>${podcast.description}</p>
-            <a href="/podcasts/${podcast.slug}.html" class="link-more">Ouvir →</a>
+            <a href="/SSBJr.devblog/podcasts/${podcast.slug}.html" class="link-more">Ouvir →</a>
           </div>
         </article>
       `;
@@ -282,10 +282,10 @@ function renderLanding(data) {
         <article class="card video-card">
           <div class="video-icon">🎥</div>
           <div class="card-content">
-            <h3><a href="/videos/${video.slug}.html">${video.title}</a></h3>
+            <h3><a href="/SSBJr.devblog/videos/${video.slug}.html">${video.title}</a></h3>
             <time>${formattedDate}</time>
             <p>${video.description}</p>
-            <a href="/videos/${video.slug}.html" class="link-more">Assistir →</a>
+            <a href="/SSBJr.devblog/videos/${video.slug}.html" class="link-more">Assistir →</a>
           </div>
         </article>
       `;
