@@ -119,11 +119,11 @@ function renderPost(post) {
     .join(' ');
 
   return template
-    .replace('{{title}}', post.title)
-    .replace('{{date}}', formattedDate)
-    .replace('{{content}}', post.content)
-    .replace('{{tags}}', tagsHtml)
-    .replace('{{slug}}', post.slug);
+    .replace(/{{title}}/g, post.title)
+    .replace(/{{date}}/g, formattedDate)
+    .replace(/{{content}}/g, post.content)
+    .replace(/{{tags}}/g, tagsHtml)
+    .replace(/{{slug}}/g, post.slug);
 }
 
 // Renderizar projeto
@@ -132,11 +132,11 @@ function renderProject(project) {
   const formattedDate = dayjs(project.date).format('DD/MM/YYYY');
 
   return template
-    .replace('{{title}}', project.title)
-    .replace('{{date}}', formattedDate)
-    .replace('{{content}}', project.content)
-    .replace('{{image}}', project.image || '/imagens/project-placeholder.jpg')
-    .replace('{{slug}}', project.slug);
+    .replace(/{{title}}/g, project.title)
+    .replace(/{{date}}/g, formattedDate)
+    .replace(/{{content}}/g, project.content)
+    .replace(/{{image}}/g, project.image || '/imagens/project-placeholder.jpg')
+    .replace(/{{slug}}/g, project.slug);
 }
 
 // Renderizar produto
@@ -145,11 +145,11 @@ function renderProduct(product) {
   const formattedDate = dayjs(product.date).format('DD/MM/YYYY');
 
   return template
-    .replace('{{title}}', product.title)
-    .replace('{{date}}', formattedDate)
-    .replace('{{content}}', product.content)
-    .replace('{{image}}', product.image || '/imagens/product-placeholder.jpg')
-    .replace('{{slug}}', product.slug);
+    .replace(/{{title}}/g, product.title)
+    .replace(/{{date}}/g, formattedDate)
+    .replace(/{{content}}/g, product.content)
+    .replace(/{{image}}/g, product.image || '/imagens/product-placeholder.jpg')
+    .replace(/{{slug}}/g, product.slug);
 }
 
 // Renderizar podcast
@@ -158,11 +158,11 @@ function renderPodcast(podcast) {
   const formattedDate = dayjs(podcast.date).format('DD/MM/YYYY');
 
   return template
-    .replace('{{title}}', podcast.title)
-    .replace('{{date}}', formattedDate)
-    .replace('{{content}}', podcast.content)
-    .replace('{{audioUrl}}', podcast.audioUrl || '')
-    .replace('{{slug}}', podcast.slug);
+    .replace(/{{title}}/g, podcast.title)
+    .replace(/{{date}}/g, formattedDate)
+    .replace(/{{content}}/g, podcast.content)
+    .replace(/{{audioUrl}}/g, podcast.audioUrl || '')
+    .replace(/{{slug}}/g, podcast.slug);
 }
 
 // Renderizar vídeo
@@ -171,11 +171,11 @@ function renderVideo(video) {
   const formattedDate = dayjs(video.date).format('DD/MM/YYYY');
 
   return template
-    .replace('{{title}}', video.title)
-    .replace('{{date}}', formattedDate)
-    .replace('{{content}}', video.content)
-    .replace('{{videoUrl}}', video.videoUrl || '')
-    .replace('{{slug}}', video.slug);
+    .replace(/{{title}}/g, video.title)
+    .replace(/{{date}}/g, formattedDate)
+    .replace(/{{content}}/g, video.content)
+    .replace(/{{videoUrl}}/g, video.videoUrl || '')
+    .replace(/{{slug}}/g, video.slug);
 }
 
 // Renderizar landing page
